@@ -8,14 +8,20 @@ font-family: 'Arial', sans-serif;
 color: #fff;
 }
 
-/* Parallax Background /
+/* Body background dark */
+body {
+background-color: #0d0d0d;
+scroll-behavior: smooth;
+}
+
+/* Parallax Background */
 .parallax-bg {
 position: fixed;
 top: 0;
 left: 0;
 width: 100%;
 height: 100%;
-background-image: url('ai-lab-bg.jpg'); / η actual εικόνα σου */
+background-image: url('images/ai-lab-bg.jpg');
 background-size: cover;
 background-position: center;
 z-index: -1;
@@ -55,7 +61,7 @@ opacity: 0.8;
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
-gap: 30px;
+gap: 40px;
 padding: 50px 20px;
 }
 
@@ -64,6 +70,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 max-width: 250px;
+position: relative;
 }
 
 .triplet img {
@@ -77,6 +84,19 @@ font-size: 0.8rem;
 opacity: 0.7;
 text-align: center;
 margin-top: 5px;
+}
+
+/* Arrow between images */
+.arrow {
+font-size: 2rem;
+margin: 5px 0;
+color: #81aaff;
+animation: floatArrow 1.5s infinite alternate;
+}
+
+@keyframes floatArrow {
+from { transform: translateY(0); }
+to { transform: translateY(-5px); }
 }
 
 /* Gallery */
@@ -99,12 +119,8 @@ opacity: 0.7;
 text-align: center;
 }
 
-/* Body background dark */
-body {
-background-color: #0d0d0d;
-}
-
-/* Smooth scroll behavior */
-html {
-scroll-behavior: smooth;
+/* Hover Effects */
+.triplet img:hover, .gallery-item img:hover {
+transform: scale(1.05);
+transition: transform 0.3s ease;
 }
