@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>AI Visual Lab Portfolio</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Visual Transformation Lab</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,81 +12,59 @@
 <div class="parallax-bg"></div>
 
 <header class="hero">
+<span class="byline">by Haris Mouti</span>
 <h1>AI VISUAL TRANSFORMATION LAB</h1>
 <p>From reality to synthetic intelligence</p>
 </header>
 
+<main>
+
+<!-- Triplets Section -->
 <section class="triplets">
-
-<!-- TRIPLET 1 -->
 <div class="triplet">
-<img src="images/og1.jpg" alt="Original">
-<div class="arrow">→</div>
-<img src="images/ai1.jpg" alt="AI Image">
-<div class="arrow">→</div>
-<img src="images/vid1.jpg" alt="AI Video">
+<img src="media/og1-placeholder.jpg" alt="OG1">
+<img src="media/ai1-placeholder.jpg" alt="AI1">
+<img src="media/vid1-placeholder.jpg" alt="VID1">
+<span class="caption">Transforming reality into AI vision</span>
 </div>
-<p class="caption">Original input transformed through AI vision and motion synthesis</p>
-
-<!-- TRIPLET 2 -->
 <div class="triplet">
-<img src="images/og2.jpg">
-<div class="arrow">→</div>
-<img src="images/ai2.jpg">
-<div class="arrow">→</div>
-<img src="images/vid2.jpg">
+<img src="media/og2-placeholder.jpg" alt="OG2">
+<img src="media/ai2-placeholder.jpg" alt="AI2">
+<img src="media/vid2-placeholder.jpg" alt="VID2">
+<span class="caption">Transforming reality into AI vision</span>
 </div>
-<p class="caption">Original input transformed through AI vision and motion synthesis</p>
-
-<!-- TRIPLET 3 -->
 <div class="triplet">
-<img src="images/og3.jpg">
-<div class="arrow">→</div>
-<img src="images/ai3.jpg">
-<div class="arrow">→</div>
-<img src="images/vid3.jpg">
+<img src="media/og3-placeholder.jpg" alt="OG3">
+<img src="media/ai3-placeholder.jpg" alt="AI3">
+<img src="media/vid3-placeholder.jpg" alt="VID3">
+<span class="caption">Transforming reality into AI vision</span>
 </div>
-<p class="caption">Original input transformed through AI vision and motion synthesis</p>
-
-<!-- TRIPLET 4 -->
 <div class="triplet">
-<img src="images/og4.jpg">
-<div class="arrow">→</div>
-<img src="images/ai4.jpg">
-<div class="arrow">→</div>
-<img src="images/vid4.jpg">
+<img src="media/og4-placeholder.jpg" alt="OG4">
+<img src="media/ai4-placeholder.jpg" alt="AI4">
+<img src="media/vid4-placeholder.jpg" alt="VID4">
+<span class="caption">Transforming reality into AI vision</span>
 </div>
-<p class="caption">Original input transformed through AI vision and motion synthesis</p>
-
 </section>
 
+<!-- Gallery Section -->
 <section class="gallery">
-<div class="card">
-<img src="images/g1.jpg">
-<span>High-fidelity AI reconstruction</span>
-</div>
-<div class="card">
-<img src="images/g2.jpg">
-<span>Neural lighting synthesis</span>
-</div>
-<div class="card">
-<img src="images/g3.jpg">
-<span>Prompt-driven realism</span>
-</div>
-<div class="card">
-<img src="images/g4.jpg">
-<span>Temporal consistency study</span>
-</div>
-<div class="card">
-<img src="images/g5.jpg">
-<span>AI cinematic depth</span>
-</div>
-<div class="card">
-<img src="images/g6.jpg">
-<span>Synthetic environment design</span>
-</div>
+<div class="gallery-item"><img src="media/g1-placeholder.jpg" alt="G1"><span class="caption">Transforming reality into AI vision</span></div>
+<div class="gallery-item"><img src="media/g2-placeholder.jpg" alt="G2"><span class="caption">Transforming reality into AI vision</span></div>
+<div class="gallery-item"><img src="media/g3-placeholder.jpg" alt="G3"><span class="caption">Transforming reality into AI vision</span></div>
+<div class="gallery-item"><img src="media/g4-placeholder.jpg" alt="G4"><span class="caption">Transforming reality into AI vision</span></div>
+<div class="gallery-item"><img src="media/g5-placeholder.jpg" alt="G5"><span class="caption">Transforming reality into AI vision</span></div>
+<div class="gallery-item"><img src="media/g6-placeholder.jpg" alt="G6"><span class="caption">Transforming reality into AI vision</span></div>
 </section>
+
+</main>
+
+<script>
+window.addEventListener('scroll', () => {
+const scrolled = window.scrollY;
+document.querySelector('.parallax-bg').style.transform = translateY(${scrolled * 0.3}px);
+});
+</script>
 
 </body>
 </html>
-
