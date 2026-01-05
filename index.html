@@ -1,73 +1,526 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI Visual Transformation Lab</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Visual Transformation Lab by Haris Mouti</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Parallax Background -->
+    <div class="parallax-bg">
+        <div class="bg-overlay"></div>
+        <div class="particles-container">
+            <div class="particle p1"></div>
+            <div class="particle p2"></div>
+            <div class="particle p3"></div>
+            <div class="particle p4"></div>
+            <div class="particle p5"></div>
+            <div class="particle p6"></div>
+        </div>
+        <div class="scan-line"></div>
+    </div>
 
-<!-- Parallax Background -->
-<div class="parallax-bg"></div>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="title-container">
+                <h1 class="main-title">
+                    <span class="title-line">AI VISUAL</span>
+                    <span class="title-line">TRANSFORMATION LAB</span>
+                </h1>
+                <div class="subtitle-container">
+                    <div class="subtitle-line"></div>
+                    <h2 class="subtitle">by Haris Mouti</h2>
+                    <div class="subtitle-line"></div>
+                </div>
+            </div>
+            <div class="hero-description">
+                <p>Exploring the frontier of visual intelligence through neural networks, generative algorithms, and computational creativity</p>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <p>SCROLL TO EXPLORE</p>
+            </div>
+        </div>
+        <div class="hero-glow glow-1"></div>
+        <div class="hero-glow glow-2"></div>
+    </section>
 
-<header class="hero">
-<span class="byline">by Haris Mouti</span>
-<h1>AI VISUAL TRANSFORMATION LAB</h1>
-<p>From reality to synthetic intelligence</p>
-</header>
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Section A - 4 Triplets -->
+        <section class="section-a" id="triplets">
+            <div class="section-header">
+                <h2 class="section-title">AI TRANSFORMATION PROCESS</h2>
+                <p class="section-subtitle">From original input to AI-enhanced output in three stages</p>
+                <div class="section-divider"></div>
+            </div>
 
-<main>
+            <!-- Triplet 1 -->
+            <div class="triplet-container">
+                <h3 class="triplet-title">Portrait Enhancement Series</h3>
+                <div class="triplet">
+                    <div class="card">
+                        <div class="card-header">
+                            <span class="card-label">ORIGINAL PHOTO</span>
+                            <div class="card-icon"><i class="fas fa-camera"></i></div>
+                        </div>
+                        <div class="card-placeholder">
+                            <div class="placeholder-content">
+                                <i class="fas fa-image"></i>
+                                <p>Original portrait capture</p>
+                            </div>
+                        </div>
+                        <div class="card-glow"></div>
+                    </div>
+                    <div class="transformation-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                        <div class="pulse-dot"></div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <span class="card-label">AI PHOTO</span>
+                            <div class="card-icon"><i class="fas fa-brain"></i></div>
+                        </div>
+                        <div class="card-placeholder">
+                            <div class="placeholder-content">
+                                <i class="fas fa-robot"></i>
+                                <p>Neural-enhanced portrait</p>
+                            </div>
+                        </div>
+                        <div class="card-glow"></div>
+                    </div>
+                    <div class="transformation-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                        <div class="pulse-dot"></div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <span class="card-label">AI VIDEO</span>
+                            <div class="card-icon"><i class="fas fa-video"></i></div>
+                        </div>
+                        <div class="card-placeholder">
+                            <div class="placeholder-content">
+                                <i class="fas fa-film"></i>
+                                <p>Animated transformation</p>
+                            </div>
+                        </div>
+                        <div class="card-glow"></div>
+                    </div>
+                </div>
+            </div>
 
-<!-- Triplets Section -->
-<section class="triplets">
-<div class="triplet">
-<img src="images/og1-placeholder.jpg" alt="OG1">
-<img src="images/ai1-placeholder.jpg" alt="AI1">
-<img src="images/vid1-placeholder.jpg" alt="VID1">
-<span class="caption">Transforming reality into AI vision</span>
-<div class="arrow">→</div>
-</div>
-<div class="triplet">
-<img src="images/og2-placeholder.jpg" alt="OG2">
-<img src="images/ai2-placeholder.jpg" alt="AI2">
-<img src="images/vid2-placeholder.jpg" alt="VID2">
-<span class="caption">Transforming reality into AI vision</span>
-<div class="arrow">→</div>
-</div>
-<div class="triplet">
-<img src="images/og3-placeholder.jpg" alt="OG3">
-<img src="images/ai3-placeholder.jpg" alt="AI3">
-<img src="images/vid3-placeholder.jpg" alt="VID3">
-<span class="caption">Transforming reality into AI vision</span>
-<div class="arrow">→</div>
-</div>
-<div class="triplet">
-<img src="images/og4-placeholder.jpg" alt="OG4">
-<img src="images/ai4-placeholder.jpg" alt="AI4">
-<img src="images/vid4-placeholder.jpg" alt="VID4">
-<span class="caption">Transforming reality into AI vision</span>
-</div>
-</section>
+            <!-- Triplet 2 -->
+            <div class="triplet-container">
+                <h3 class="triplet-title">Architectural Visualization</h3>
+                <div class="triplet">
+                    <div class="card">
+                        <div class="card-header">
+                            <span class="card-label">ORIGINAL PHOTO</span>
+                            <div class="card-icon"><i class="fas fa-building"></i></div>
+                        </div>
+                        <div class="card-placeholder">
+                            <div class="placeholder-content">
+                                <i class="fas fa-city"></i>
+                                <p>Original architectural photo</p>
+                            </div>
+                        </div>
+                        <div class="card-glow"></div>
+                    </div>
+                    <div class="transformation-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                        <div class="pulse-dot"></div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <span class="card-label">AI PHOTO</span>
+                            <div class="card-icon"><i class="fas fa-brain"></i></div>
+                        </div>
+                        <div class="card-placeholder">
+                            <div class="placeholder-content">
+                                <i class="fas fa-chess-board"></i>
+                                <p>AI-rendered enhancement</p>
+                            </div>
+                        </div>
+                        <div class="card-glow"></div>
+                    </div>
+                    <div class="transformation-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                        <div class="pulse-dot"></div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <span class="card-label">AI VIDEO</span>
+                            <div class="card-icon"><i class="fas fa-video"></i></div>
+                        </div>
+                        <div class="card-placeholder">
+                            <div class="placeholder-content">
+                                <i class="fas fa-walking"></i>
+                                <p>Virtual walkthrough</p>
+                            </div>
+                        </div>
+                        <div class="card-glow"></div>
+                    </div>
+                </div>
+            </div>
 
-<!-- Gallery Section -->
-<section class="gallery">
-<div class="gallery-item"><img src="images/g1-placeholder.jpg" alt="G1"><span class="caption">Transforming reality into AI vision</span></div>
-<div class="gallery-item"><img src="images/g2-placeholder.jpg" alt="G2"><span class="caption">Transforming reality into AI vision</span></div>
-<div class="gallery-item"><img src="images/g3-placeholder.jpg" alt="G3"><span class="caption">Transforming reality into AI vision</span></div>
-<div class="gallery-item"><img src="images/g4-placeholder.jpg" alt="G4"><span class="caption">Transforming reality into AI vision</span></div>
-<div class="gallery-item"><img src="images/g5-placeholder.jpg" alt="G5"><span class="caption">Transforming reality into AI vision</span></div>
-<div class="gallery-item"><img src="images/g6-placeholder.jpg" alt="G6"><span class="caption">Transforming reality into AI vision</span></div>
-</section>
+            <!-- Triplet 3 -->
+            <div class="triplet-container">
+                <h3 class="triplet-title">Natural Environment Series</h3>
+                <div class="triplet">
+                    <div class="card">
+                        <div class="card-header">
+                            <span class="card-label">ORIGINAL PHOTO</span>
+                            <div class="card-icon"><i class="fas fa-tree"></i></div>
+                        </div>
+                        <div class="card-placeholder">
+                            <div class="placeholder-content">
+                                <i class="fas fa-mountain"></i>
+                                <p>Original landscape</p>
+                            </div>
+                        </div>
+                        <div class="card-glow"></div>
+                    </div>
+                    <div class="transformation-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                        <div class="pulse-dot"></div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <span class="card-label">AI PHOTO</span>
+                            <div class="card-icon"><i class="fas fa-brain"></i></div>
+                        </div>
+                        <div class="card-placeholder">
+                            <div class="placeholder-content">
+                                <i class="fas fa-palette"></i>
+                                <p>AI-enhanced landscape</p>
+                            </div>
+                        </div>
+                        <div class="card-glow"></div>
+                    </div>
+                    <div class="transformation-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                        <div class="pulse-dot"></div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <span class="card-label">AI VIDEO</span>
+                            <div class="card-icon"><i class="fas fa-video"></i></div>
+                        </div>
+                        <div class="card-placeholder">
+                            <div class="placeholder-content">
+                                <i class="fas fa-water"></i>
+                                <p>Dynamic environment</p>
+                            </div>
+                        </div>
+                        <div class="card-glow"></div>
+                    </div>
+                </div>
+            </div>
 
-</main>
+            <!-- Triplet 4 -->
+            <div class="triplet-container">
+                <h3 class="triplet-title">Abstract Art Generation</h3>
+                <div class="triplet">
+                    <div class="card">
+                        <div class="card-header">
+                            <span class="card-label">ORIGINAL PHOTO</span>
+                            <div class="card-icon"><i class="fas fa-paint-brush"></i></div>
+                        </div>
+                        <div class="card-placeholder">
+                            <div class="placeholder-content">
+                                <i class="fas fa-shapes"></i>
+                                <p>Original abstract form</p>
+                            </div>
+                        </div>
+                        <div class="card-glow"></div>
+                    </div>
+                    <div class="transformation-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                        <div class="pulse-dot"></div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <span class="card-label">AI PHOTO</span>
+                            <div class="card-icon"><i class="fas fa-brain"></i></div>
+                        </div>
+                        <div class="card-placeholder">
+                            <div class="placeholder-content">
+                                <i class="fas fa-fire"></i>
+                                <p>AI-generated art</p>
+                            </div>
+                        </div>
+                        <div class="card-glow"></div>
+                    </div>
+                    <div class="transformation-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                        <div class="pulse-dot"></div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <span class="card-label">AI VIDEO</span>
+                            <div class="card-icon"><i class="fas fa-video"></i></div>
+                        </div>
+                        <div class="card-placeholder">
+                            <div class="placeholder-content">
+                                <i class="fas fa-expand-arrows-alt"></i>
+                                <p>Evolving abstraction</p>
+                            </div>
+                        </div>
+                        <div class="card-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<script>
-window.addEventListener('scroll', () => {
-const scrolled = window.scrollY;
-document.querySelector('.parallax-bg').style.transform = translateY(${scrolled * 0.3}px);
-});
-</script>
+        <!-- Section B - 6 Pairs -->
+        <section class="section-b" id="pairs">
+            <div class="section-header">
+                <h2 class="section-title">AI GENERATED SERIES</h2>
+                <p class="section-subtitle">Six collections of AI-transformed visual concepts</p>
+                <div class="section-divider"></div>
+            </div>
 
+            <!-- Pair 1 -->
+            <div class="pair-container">
+                <div class="pair">
+                    <div class="card wide-card">
+                        <div class="card-header">
+                            <span class="card-label">NEURAL ARCHITECTURE</span>
+                            <div class="card-icon"><i class="fas fa-network-wired"></i></div>
+                        </div>
+                        <div class="card-placeholder">
+                            <div class="placeholder-content">
+                                <i class="fas fa-project-diagram"></i>
+                                <p>AI-generated structural forms</p>
+                            </div>
+                        </div>
+                        <div class="card-glow"></div>
+                    </div>
+                    <div class="card wide-card">
+                        <div class="card-header">
+                            <span class="card-label">BIOMECHANICAL FORMS</span>
+                            <div class="card-icon"><i class="fas fa-atom"></i></div>
+                        </div>
+                        <div class="card-placeholder">
+                            <div class="placeholder-content">
+                                <i class="fas fa-dna"></i>
+                                <p>Organic-mechanical fusion</p>
+                            </div>
+                        </div>
+                        <div class="card-glow"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pair 2 -->
+            <div class="pair-container">
+                <div class="pair">
+                    <div class="card wide-card">
+                        <div class="card-header">
+                            <span class="card-label">DIGITAL PORTRAITS</span>
+                            <div class="card-icon"><i class="fas fa-user-astronaut"></i></div>
+                        </div>
+                        <div class="card-placeholder">
+                            <div class="placeholder-content">
+                                <i class="fas fa-user-ninja"></i>
+                                <p>AI-rendered human faces</p>
+                            </div>
+                        </div>
+                        <div class="card-glow"></div>
+                    </div>
+                    <div class="card wide-card">
+                        <div class="card-header">
+                            <span class="card-label">CYBERSCAPE</span>
+                            <div class="card-icon"><i class="fas fa-gamepad"></i></div>
+                        </div>
+                        <div class="card-placeholder">
+                            <div class="placeholder-content">
+                                <i class="fas fa-city"></i>
+                                <p>Futuristic cityscapes</p>
+                            </div>
+                        </div>
+                        <div class="card-glow"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pair 3 -->
+            <div class="pair-container">
+                <div class="pair">
+                    <div class="card wide-card">
+                        <div class="card-header">
+                            <span class="card-label">QUANTUM ABSTRACTION</span>
+                            <div class="card-icon"><i class="fas fa-atom"></i></div>
+                        </div>
+                        <div class="card-placeholder">
+                            <div class="placeholder-content">
+                                <i class="fas fa-circle-notch"></i>
+                                <p>Subatomic visualizations</p>
+                            </div>
+                        </div>
+                        <div class="card-glow"></div>
+                    </div>
+                    <div class="card wide-card">
+                        <div class="card-header">
+                            <span class="card-label">DATA FLOW</span>
+                            <div class="card-icon"><i class="fas fa-stream"></i></div>
+                        </div>
+                        <div class="card-placeholder">
+                            <div class="placeholder-content">
+                                <i class="fas fa-code-branch"></i>
+                                <p>Neural network visualization</p>
+                            </div>
+                        </div>
+                        <div class="card-glow"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pair 4 -->
+            <div class="pair-container">
+                <div class="pair">
+                    <div class="card wide-card">
+                        <div class="card-header">
+                            <span class="card-label">SURREAL LANDSCAPES</span>
+                            <div class="card-icon"><i class="fas fa-mountain"></i></div>
+                        </div>
+                        <div class="card-placeholder">
+                            <div class="placeholder-content">
+                                <i class="fas fa-cloud-moon"></i>
+                                <p>Dream-like environments</p>
+                            </div>
+                        </div>
+                        <div class="card-glow"></div>
+                    </div>
+                    <div class="card wide-card">
+                        <div class="card-header">
+                            <span class="card-label">GEOMETRIC EVOLUTION</span>
+                            <div class="card-icon"><i class="fas fa-shapes"></i></div>
+                        </div>
+                        <div class="card-placeholder">
+                            <div class="placeholder-content">
+                                <i class="fas fa-cube"></i>
+                                <p>Algorithmic pattern growth</p>
+                            </div>
+                        </div>
+                        <div class="card-glow"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pair 5 -->
+            <div class="pair-container">
+                <div class="pair">
+                    <div class="card wide-card">
+                        <div class="card-header">
+                            <span class="card-label">NEON NOIR</span>
+                            <div class="card-icon"><i class="fas fa-lightbulb"></i></div>
+                        </div>
+                        <div class="card-placeholder">
+                            <div class="placeholder-content">
+                                <i class="fas fa-adjust"></i>
+                                <p>Cyberpunk aesthetic</p>
+                            </div>
+                        </div>
+                        <div class="card-glow"></div>
+                    </div>
+                    <div class="card wide-card">
+                        <div class="card-header">
+                            <span class="card-label">DIGITAL FLORA</span>
+                            <div class="card-icon"><i class="fas fa-seedling"></i></div>
+                        </div>
+                        <div class="card-placeholder">
+                            <div class="placeholder-content">
+                                <i class="fas fa-leaf"></i>
+                                <p>AI-generated botanical forms</p>
+                            </div>
+                        </div>
+                        <div class="card-glow"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pair 6 -->
+            <div class="pair-container">
+                <div class="pair">
+                    <div class="card wide-card">
+                        <div class="card-header">
+                            <span class="card-label">HOLOGRAPHIC MATTER</span>
+                            <div class="card-icon"><i class="fas fa-hologram"></i></div>
+                        </div>
+                        <div class="card-placeholder">
+                            <div class="placeholder-content">
+                                <i class="fas fa-gem"></i>
+                                <p>Light-based material studies</p>
+                            </div>
+                        </div>
+                        <div class="card-glow"></div>
+                    </div>
+                    <div class="card wide-card">
+                        <div class="card-header">
+                            <span class="card-label">TEMPORAL SHIFTS</span>
+                            <div class="card-icon"><i class="fas fa-hourglass-half"></i></div>
+                        </div>
+                        <div class="card-placeholder">
+                            <div class="placeholder-content">
+                                <i class="fas fa-clock"></i>
+                                <p>Time-based transformations</p>
+                            </div>
+                        </div>
+                        <div class="card-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-title">
+                    <h3>AI VISUAL TRANSFORMATION LAB</h3>
+                    <p>by Haris Mouti</p>
+                </div>
+                <div class="footer-info">
+                    <p>A premium showcase of AI-powered visual transformations</p>
+                    <p>Hosted on GitHub & Vercel</p>
+                </div>
+                <div class="footer-links">
+                    <div class="link-item">
+                        <i class="fas fa-code"></i>
+                        <span>Production-ready HTML + CSS</span>
+                    </div>
+                    <div class="link-item">
+                        <i class="fas fa-palette"></i>
+                        <span>Futuristic AI Lab Aesthetic</span>
+                    </div>
+                    <div class="link-item">
+                        <i class="fas fa-bolt"></i>
+                        <span>Cinematic Visual Experience</span>
+                    </div>
+                </div>
+                <div class="footer-glow"></div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Background audio visualization (purely visual) -->
+    <div class="audio-viz">
+        <div class="viz-bar"></div>
+        <div class="viz-bar"></div>
+        <div class="viz-bar"></div>
+        <div class="viz-bar"></div>
+        <div class="viz-bar"></div>
+        <div class="viz-bar"></div>
+        <div class="viz-bar"></div>
+        <div class="viz-bar"></div>
+    </div>
 </body>
 </html>
